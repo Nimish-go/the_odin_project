@@ -63,9 +63,19 @@
     width: 100%;
 }
 
+.quote{
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
 .bottom a{
     text-decoration: underline;
     color: white;
+}
+
+.form-quote{
+    margin: 0 1rem 1rem 1rem;
+    font-weight: bold;
 }
 
 .logo img{
@@ -86,11 +96,6 @@ form{
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     width: 100%;
-    margin-left: 1rem;
-}
-
-h2{
-    margin-bottom: 20px;
     margin-left: 1rem;
 }
 
