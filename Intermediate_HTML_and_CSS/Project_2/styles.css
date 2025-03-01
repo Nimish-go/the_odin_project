@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Roboto',serif;
 }
+
 .container{
     max-width: 100%;
     display: flex;
@@ -15,6 +16,8 @@
     color: #fff;
     position: relative;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     padding-right: 1rem;
     width: fit-content;
@@ -27,6 +30,28 @@
     position: relative;
 }
 
+.search-bar{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-topbar{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.search-img{
+    margin: 1rem;
+    margin-left: 2rem;
+    color: pointer;
+    height: 1.2rem;
+}
+
 .icons-img{
     height: 35px;
     position: relative;
@@ -36,10 +61,87 @@
 }
 
 .list-1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .list-1 ul li{
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     cursor: pointer;
+}
+
+.list-2{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+.list-2 ul li{
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.search-input{
+    border-radius: 50px;
+    margin: 0.5rem;
+    height: 2rem;
+    border: none;
+    background: #adb5bd;
+    width: 45rem;
+}
+
+.notifications-icon{
+    margin: 1rem;
+}
+
+.account-profile{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.avatar{
+    height: 3rem;
+    border-radius: 50%;
+    background: #fca311;
+    margin-left: 1rem;
+}
+
+.account-profile p{
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.greetings{
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar-img{
+    height: 4rem;
+    border-radius: 50%;
+    background: #fca311;
+    margin: 1rem 1rem 1rem 3rem;
+}
+
+.greetings-text{
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.greetings-text p{
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 0.7rem;
+    margin: 1rem;
+    height: 4rem;
+    border-radius: 50px;
+    background: #219ebc;
+    color: #fff;
+    cursor: pointer;
+    border: none;
 }
