@@ -20,4 +20,11 @@ const addBookToLibrary = () => {
     Library.push(book);
 }
 
-
+const cards = document.getElementById('cards')
+Book.prototype.display = () => {
+    cards.innerHTML = `
+    <div class='card'>
+        <h1 class='card-title'>${this.name}</h1>
+        <p class='book-genre'>${this.price}</p>
+    </div>`;
+}
