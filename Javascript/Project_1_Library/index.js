@@ -12,7 +12,7 @@ const dialog = document.querySelector('dialog');
 
 addBook.addEventListener("click", () => {
     dialog.showModal();
-})
+});
 
 const submitBook = document.querySelector(".submitBook");
 
@@ -36,7 +36,7 @@ const closeModal = document.getElementById("close");
 
 closeModal.addEventListener("click" , () => {
     dialog.close();
-})
+});
 
 const cards = document.getElementById('cards');
 
