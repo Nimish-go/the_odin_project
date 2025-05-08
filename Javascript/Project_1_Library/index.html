@@ -3,29 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <div class="title">
-            <h1 class="heading">Library App</h1>
-        </div>
-        <div class="add-book">
-            <button class="add-new-book">Add New Book</button>
-        </div>
-        <div id="cards"></div>
-        <div class="modal">
-            <dialog class="modal-dialog">
-                <button class="close" id="close" autofocus>Close</button>
-                <form>
-                    <input type="text" placeholder="Enter Book Name: " class="bookName">
-                    <input type="text" placeholder="Enter Book Genre: " class="bookGenre">
-                    <button class="submit">Add Book</button>
+    <div class="nav mw-100">
+        <nav class="navbar bg-body-tertiary w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand">Library App</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-            </dialog>
-        </div>
+            </div>
+        </nav>
     </div>
-    <script src="./index.js"></script>
+    <div class="main-container-library">
+        <div class="cards-main-library"></div>
+        <div class="add-books">
+            <button type="button" class="btn btn-outline-primary add-books-btn" data-bs-toggle="modal" data-bs-target="#modal-add-book">Add New Books in Library</button>
+        </div>
+        <div class="cards-all-books"></div>
+    </div>
+        <div class="modal" tabindex="-1" id="modal-add-book">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add New Book</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="book-add-form">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="bookName" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Book Name</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="genre" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Enter Genre</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="author" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Enter Author</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" name="read" role="switch" id="switchCheckDefault" id="">
+                                <label class="form-check-label" for="switchCheckDefault">Read?</label>
+                              </div>
+                              <button type="submit" class="btn btn-primary addBooksBtn mt-3" id="save-changes">Save changes</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

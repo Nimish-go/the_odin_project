@@ -1,67 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.container{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+.cards-all-books{
 
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    margin-top: 1rem;
 
-.heading{
-    font-weight: 500;
-}
-
-.cards{
     display: grid;
-    place-items: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: repeat(2,150px);
-    grid-template-rows: repeat(2,150px);
-    gap: 200px;
-    max-width: 100%;
-    width: 100%;
-}
 
-.card{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    max-width: 100%;
-    width: max-content;
-}
+    grid-template-columns: repeat(3,150fr);
 
-.add-new-book{
-    padding: 1rem;
-    margin: 1.5rem;
-    background-color: #49a078;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+    grid-template-rows: repeat(3,150fr);
 
-.close{
-    padding: 0.5rem;
-    background-color: #da2c38;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
-
-.modal-dialog{
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    column-gap: 3rem;
 }
